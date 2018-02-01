@@ -26,5 +26,15 @@ namespace JonathanRobbins.xTendingxConnect.Controllers
 
             return View();
         }
+
+        public ActionResult Carousel()
+        {
+            return View();
+        }
+
+        public ActionResult Featurette()
+        {
+            return PartialView();
+        }
     }
 }

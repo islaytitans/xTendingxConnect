@@ -75,7 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facets\CatalogueInteractions.cs" />
+    <Compile Include="Models\CatalogueInteractionsModel.cs" />
     <Compile Include="Facets\SampleOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
