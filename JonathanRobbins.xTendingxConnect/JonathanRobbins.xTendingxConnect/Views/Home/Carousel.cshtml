@@ -4,15 +4,34 @@
         <li target-data="#myCarousel" data-slide-to="2"></li>
         <li target-data="#myCarousel" data-slide-to="3"></li>
     </ol>
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner">
         @for (int i = 0; i < 3; i++)
         {
-            string activeClass = i == 0 ? "active" : string.Empty;
+            string activeClass = string.Empty;
+            string textAlignment = string.Empty;
+            string slideCount = string.Empty;
+            switch (i)
+            {
+                case 0:
+                    slideCount = "first";
+                    activeClass = "active";
+                    textAlignment = "text-left";
+                    break;
+                case 1:
+                    slideCount = "second";
+                    break;
+                case 2:
+                    slideCount = "third";
+                    textAlignment = "text-right";
+                    break;
+                default:
+                    break;
+            }
 
             <div class="carousel-item @activeClass">
-                <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <img class="@slideCount-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
                 <div class="container">
-                    <div class="carousel-caption d-none d-md-block text-left">
+                    <div class="carousel-caption @textAlignment">
                         <h1>Example headline</h1>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
