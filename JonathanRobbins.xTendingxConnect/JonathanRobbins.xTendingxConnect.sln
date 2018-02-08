@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonathanRobbins.xTendingxConnect", "JonathanRobbins.xTendingxConnect\JonathanRobbins.xTendingxConnect.csproj", "{D36F8610-D2F5-45F4-9BE2-FA5629048B6A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{DB1F6AAE-D218-4919-A199-95D037049CA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonathanRobbins.xTendingxConnect.ProductCatalogue", "Feature\JonathanRobbins.xTendingxConnect.ProductCatalogue\JonathanRobbins.xTendingxConnect.ProductCatalogue.csproj", "{E74C643E-C908-4783-9BEF-D889BEF0E124}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{7932D14D-8629-4E83-A491-D6C437494B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonathanRobbins.xTendingxConnect.Serialization", "Foundation\JonathanRobbins.xTendingxConnect.Serialization\JonathanRobbins.xTendingxConnect.Serialization.csproj", "{6CD1F527-E20F-4779-951D-357C653CB7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +27,20 @@ Global
 		{E74C643E-C908-4783-9BEF-D889BEF0E124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E74C643E-C908-4783-9BEF-D889BEF0E124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E74C643E-C908-4783-9BEF-D889BEF0E124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD1F527-E20F-4779-951D-357C653CB7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD1F527-E20F-4779-951D-357C653CB7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD1F527-E20F-4779-951D-357C653CB7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD1F527-E20F-4779-951D-357C653CB7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E74C643E-C908-4783-9BEF-D889BEF0E124} = {DB1F6AAE-D218-4919-A199-95D037049CA5}
+		{6CD1F527-E20F-4779-951D-357C653CB7FF} = {7932D14D-8629-4E83-A491-D6C437494B82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {5F739A5E-57AD-4208-92BB-4E0106200E4A}
 	EndGlobalSection
 EndGlobal
